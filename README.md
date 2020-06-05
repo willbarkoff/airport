@@ -11,7 +11,7 @@ A simple program for redirecting stdout and stdin to network ports.
 
 ---
 
-## Example
+## Examples
 
 > ⚠️ `bash` is used in this example just as a simple program. **You should not use bash or another shell with airport, as it will expose your computer over the network**.
 
@@ -38,4 +38,14 @@ As of right now, `stdin` and `stdout` are redirected over the network, while `st
 
 ```shell
 $ airport --address :1234 --redirectStderr /bin/bash
+```
+
+## Usage
+```shell
+$ airport --help
+Usage of airport:
+  -address string
+        the address to listen on (default ":8080")
+  -redirectStderr
+        redirects stderr over the network
 ```
